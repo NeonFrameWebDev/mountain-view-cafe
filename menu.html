@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Menu, Mountain View Cafe and Bakery, Green Valley AZ</title>
+<meta name="description" content="Full lunch menu at Mountain View Cafe and Bakery in Green Valley, Arizona. Cold and hot sandwiches, burgers, salads, quiche, soup, and a daily scratch bakery case.">
+<link rel="icon" type="image/jpeg" href="images/hero_team.jpg">
+<link rel="preload" as="image" href="images/dessert_platter.webp" fetchpriority="high" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;600;700&family=Cantarell:wght@400;700&family=Caveat:wght@500;600&display=swap" as="style">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;600;700&family=Cantarell:wght@400;700&family=Caveat:wght@500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;600;700&family=Cantarell:wght@400;700&family=Caveat:wght@500;600&display=swap"></noscript>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-menu">
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand" aria-label="Mountain View Cafe and Bakery home">
+      <span class="nav__wordmark">Mountain View</span>
+      <span class="nav__tag">Cafe &amp; Bakery</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="about.html">About</a>
+      <a href="visit.html" class="nav__cta">Visit</a>
+    </nav>
+    <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero hero--compact" id="hero">
+  <div class="hero__bg" style="background-image: url('images/dessert_platter.webp')" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <p class="hero__eyebrow">Scratch-Made, Every Day</p>
+    <h1 class="hero__headline">The Menu.</h1>
+    <p class="hero__sub">Cold &middot; Hot &middot; Salads &middot; Quiche &middot; Soup &middot; Bakery</p>
+  </div>
+</section>
+
+<section class="section section--cream" id="lineup">
+  <div class="section__inner">
+
+    <div class="menu-note">
+      A quick note. Our menu rotates with what is fresh and what Nancy feels like baking. Prices are posted in the cafe and are subject to change. For current pricing and specials, give us a call at <a href="tel:5206252526" style="color: var(--olive-deep); font-weight: 700;">(520) 625-2526</a> or stop in.
+    </div>
+
+    <!-- Cold Sandwiches -->
+    <div class="menu-cat" id="cold">
+      <div class="menu-cat__head">
+        <h2>Cold Sandwiches</h2>
+        <span class="script">on fresh-baked bread</span>
+      </div>
+      <p class="menu-cat__intro">Piled high, wrapped to-go-friendly, every sandwich on bread baked in-house the morning of.</p>
+      <div class="menu-list">
+
+        <div class="menu-item">
+          <h3>Chicken Salad Croissant</h3>
+          <p>Our signature chicken salad with grapes and almonds on a buttery house-made croissant.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Prime Rib Roast Beef</h3>
+          <p>Shaved prime rib, horseradish cream, Swiss, caramelized onion, hoagie roll.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Egg Salad Sandwich</h3>
+          <p>Classic egg salad on fresh wheat or sourdough. A quiet favorite of the regulars.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Tuna Salad Croissant</h3>
+          <p>Albacore tuna salad with celery and dill on a flaky croissant.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Ham and Cheese</h3>
+          <p>Black forest ham and Swiss on fresh sourdough, with lettuce, tomato, and a sharp mustard.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>BLT</h3>
+          <p>Thick-cut peppered bacon, ripe tomato, crisp lettuce on toasted sourdough. The classic.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Turkey and Cheese Croissant</h3>
+          <p>Oven-roasted turkey breast and Swiss on our flaky croissant, with greens and tomato.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Hoagie</h3>
+          <p>Ham, turkey, salami, provolone, all the fixings on a fresh hoagie roll. Built for lunch.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Chicken Sandwich</h3>
+          <p>Seasoned chicken breast with lettuce, tomato, mayo on fresh-baked bread.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Hot Sandwiches -->
+    <div class="menu-cat" id="hot">
+      <div class="menu-cat__head">
+        <h2>Hot Sandwiches</h2>
+        <span class="script">straight off the griddle</span>
+      </div>
+      <p class="menu-cat__intro">Melts, dips, and pressed classics. Come with a cup of whatever soup is on today.</p>
+      <div class="menu-list">
+
+        <div class="menu-item">
+          <h3>Grilled Ham and Cheese</h3>
+          <p>Black forest ham and Swiss, griddled golden on fresh sourdough.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Tuna Melt</h3>
+          <p>Our tuna salad with melted Swiss, grilled crisp on sourdough.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Patty Melt</h3>
+          <p>Griddled beef patty with caramelized onions and Swiss on rye. A Friday regular's order.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Classic French Dip</h3>
+          <p>Shaved roast beef, Swiss, toasted hoagie, a warm cup of au jus.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Southwestern Turkey</h3>
+          <p>Turkey, pepper jack, green chile, chipotle aioli on toasted sourdough.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>BBQ Beef</h3>
+          <p>Slow-cooked shredded beef in our house BBQ on a brioche bun.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Chicken Cordon Bleu</h3>
+          <p>Grilled chicken, black forest ham, Swiss, honey mustard, toasted roll.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Four Cheese Grilled Cheese</h3>
+          <p>Four cheese blend with prickly pear jam on sourdough. Southwest comfort food.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Burgers -->
+    <div class="menu-cat" id="burgers">
+      <div class="menu-cat__head">
+        <h2>Burgers</h2>
+        <span class="script">best in Green Valley</span>
+      </div>
+      <p class="menu-cat__intro">Hand-pattied, griddled, on a fresh brioche. Our most-ordered item, according to every single regular.</p>
+      <div class="menu-list">
+
+        <div class="menu-item">
+          <h3>House Burger</h3>
+          <p>Quarter-pound griddled patty, lettuce, tomato, red onion, house sauce on a toasted brioche bun.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Cheeseburger</h3>
+          <p>Add your choice of American, cheddar, Swiss, or pepper jack.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Mushroom Swiss</h3>
+          <p>Sauteed mushrooms, melted Swiss, house sauce.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>BBQ Bacon</h3>
+          <p>Peppered bacon, cheddar, house BBQ, crispy onions.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Salads -->
+    <div class="menu-cat" id="salads">
+      <div class="menu-cat__head">
+        <h2>Salads</h2>
+        <span class="script">fresh and generous</span>
+      </div>
+      <p class="menu-cat__intro">Bigger than you expect. House dressings made in-house.</p>
+      <div class="menu-list">
+
+        <div class="menu-item">
+          <h3>Farmers Market</h3>
+          <p>Field greens, seasonal vegetables, feta, toasted pepitas, house vinaigrette.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Santa Fe</h3>
+          <p>Grilled chicken, black beans, corn, avocado, pepper jack, tortilla strips, chipotle ranch.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Stuffed Tomato</h3>
+          <p>A vine-ripe tomato stuffed with your choice of chicken, tuna, or egg salad on a bed of greens.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Turkey Club</h3>
+          <p>Field greens, sliced turkey, bacon, hard-boiled egg, avocado, tomato, ranch or blue cheese.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Shrimp Louie</h3>
+          <p>Chilled shrimp, butter lettuce, egg, tomato, cucumber, house Louie dressing.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Quiche and Soup -->
+    <div class="menu-cat" id="quiche">
+      <div class="menu-cat__head">
+        <h2>Quiche &amp; Soup</h2>
+        <span class="script">ask what is on today</span>
+      </div>
+      <p class="menu-cat__intro">Quiche and soup rotate daily. Whatever is in the case, that is what is on the menu.</p>
+      <div class="menu-list">
+
+        <div class="menu-item">
+          <h3>Quiche of the Day</h3>
+          <p>A different scratch quiche every day. Served with a small side salad or fruit.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Soup of the Day</h3>
+          <p>House-made daily. Italian wedding and Tuscan bean are two that regulars look for. Call to ask what is on.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bakery -->
+    <div class="menu-cat" id="bakery">
+      <div class="menu-cat__head">
+        <h2>From the Bakery</h2>
+        <span class="script">Nancy's domain</span>
+      </div>
+      <p class="menu-cat__intro">The case rotates daily. Some things are always there, some disappear by noon. Fresh bread bakes Tuesdays and Thursdays.</p>
+      <div class="menu-list">
+
+        <div class="menu-item">
+          <h3>Salted Caramel Pecan Cheesecake</h3>
+          <p>The dessert people drive in for. Dense, silky, just the right amount of salt.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Nancy's Tarts</h3>
+          <p>A rotating selection of fruit, chocolate, and custard tarts. Always one or two in the case.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Triple Chocolate Cake</h3>
+          <p>Chocolate cake, chocolate mousse, chocolate ganache. Slices to-go.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Red Velvet</h3>
+          <p>Classic red velvet with cream cheese frosting. Whole cakes by special order.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Caramel Apple Torte</h3>
+          <p>Seasonal favorite. Fresh apples, caramel, buttery crust.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Scones, Bear Claws, Eclairs</h3>
+          <p>Pastries out early, best before noon. Chocolate, almond, fruit, whatever Nancy baked.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Cannoli</h3>
+          <p>Crisp shells piped to order with sweet ricotta and chocolate chips.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Fresh Breads</h3>
+          <p>Sourdough, wheat, hoagie rolls, croissants. Baked here, bought by the loaf on Tuesdays and Thursdays.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Drinks -->
+    <div class="menu-cat" id="drinks">
+      <div class="menu-cat__head">
+        <h2>Drinks</h2>
+        <span class="script">cold, hot, local</span>
+      </div>
+      <div class="menu-list">
+
+        <div class="menu-item">
+          <h3>Prickly Pear Iced Tea</h3>
+          <p>Our house tea, naturally sweetened with prickly pear. Light, refreshing, unmistakably Sonoran.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Coffee</h3>
+          <p>Fresh-brewed regular and decaf. Always hot, always a refill if you are sitting.</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Iced Tea &amp; Lemonade</h3>
+          <p>Classic iced tea, house lemonade, and the two mixed (ask for an Arnold Palmer).</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Beer &amp; Wine</h3>
+          <p>A small list of local and West Coast beers, a rotating glass of wine. Ask your server.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="visit-band rise" id="come-in">
+  <p class="eyebrow eyebrow--olive">Come In</p>
+  <h2>Stop by for lunch.</h2>
+  <p>Tuesday through Saturday, 10 AM to 3 PM. Dine in, takeout, catering by request. Regulars welcome.</p>
+  <a href="visit.html" class="btn btn--olive btn--lg">Plan Your Visit</a>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <span class="foot__brand">Mountain View</span>
+    <p class="foot__tag">Cafe &amp; Bakery since 2014</p>
+    <div class="foot__social">
+      <a href="https://www.facebook.com/mountainviewcafebakery/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.yelp.com/biz/mountain-view-cafe-and-bakery-green-valley" target="_blank" rel="noopener">Yelp</a>
+      <a href="https://www.google.com/maps/place/277+W+Duval+Rd,+Green+Valley,+AZ+85614" target="_blank" rel="noopener">Directions</a>
+    </div>
+    <p class="foot__copy">&copy; 2026 Mountain View Cafe and Bakery. All rights reserved.</p>
+    <p class="foot__credit">Site by <a href="https://neonframewebdesign.com" target="_blank" rel="noopener">NeonFrame Web Design</a></p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
