@@ -88,4 +88,36 @@
   } else {
     document.querySelectorAll('.rise').forEach(function (el) { el.classList.add('visible'); });
   }
+
+  const prefersReduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const heroBg = document.querySelector('.hero .hero__bg');
+  if (heroBg && !prefersReduce) {
+    let ticking = false;
+    function updateParallax() {
+      const y = window.scrollY || window.pageYOffset;
+      const max = window.innerHeight;
+      if (y < max) {
+        heroBg.style.setProperty('--parallax-y', (y * 0.32) + 'px');
+      }
+      ticking = false;
+    }
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        requestAnimationFrame(updateParallax);
+        ticking = true;
+      }
+    }, { passive: true });
+    updateParallax();
+  }
+
+  document.querySelectorAll('.cat-card').forEach(function (card) {
+    card.addEventListener('mousemove', function (e) {
+      const rect = card.getBoundingClientRect();
+      const mx = ((e.clientX - rect.left) / rect.width) * 100;
+      const my = ((e.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty('--mx', mx + '%');
+      card.style.setProperty('--my', my + '%');
+    });
+  });
 })();
